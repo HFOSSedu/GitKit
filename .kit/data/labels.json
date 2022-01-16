@@ -1,0 +1,119 @@
+[
+    {
+        "id": 3444415232,
+        "node_id": "LA_kwDOGMv2ks7NTZsA",
+        "url": "https://api.github.com/repos/braughtg/FarmData2-For190VC-Activities/labels/190-Round1",
+        "name": "190-Round1",
+        "color": "6B4089",
+        "default": false,
+        "description": "First issues for COMP 190 Activity."
+    },
+    {
+        "id": 3444415937,
+        "node_id": "LA_kwDOGMv2ks7NTZ3B",
+        "url": "https://api.github.com/repos/braughtg/FarmData2-For190VC-Activities/labels/190-Round2",
+        "name": "190-Round2",
+        "color": "7AA01D",
+        "default": false,
+        "description": "Second issues for COMP 190 Activity."
+    },
+    {
+        "id": 3440288209,
+        "node_id": "LA_kwDOGMv2ks7NDqHR",
+        "url": "https://api.github.com/repos/braughtg/FarmData2-For190VC-Activities/labels/bug",
+        "name": "bug",
+        "color": "d73a4a",
+        "default": true,
+        "description": "Something isn't working"
+    },
+    {
+        "id": 3440288210,
+        "node_id": "LA_kwDOGMv2ks7NDqHS",
+        "url": "https://api.github.com/repos/braughtg/FarmData2-For190VC-Activities/labels/documentation",
+        "name": "documentation",
+        "color": "0075ca",
+        "default": true,
+        "description": "Improvements or additions to documentation"
+    },
+    {
+        "id": 3440288212,
+        "node_id": "LA_kwDOGMv2ks7NDqHU",
+        "url": "https://api.github.com/repos/braughtg/FarmData2-For190VC-Activities/labels/duplicate",
+        "name": "duplicate",
+        "color": "cfd3d7",
+        "default": true,
+        "description": "This issue or pull request already exists"
+    },
+    {
+        "id": 3440288214,
+        "node_id": "LA_kwDOGMv2ks7NDqHW",
+        "url": "https://api.github.com/repos/braughtg/FarmData2-For190VC-Activities/labels/enhancement",
+        "name": "enhancement",
+        "color": "a2eeef",
+        "default": true,
+        "description": "New feature or request"
+    },
+    {
+        "id": 3440288218,
+        "node_id": "LA_kwDOGMv2ks7NDqHa",
+        "url": "https://api.github.com/repos/braughtg/FarmData2-For190VC-Activities/labels/good%20first%20issue",
+        "name": "good first issue",
+        "color": "7057ff",
+        "default": true,
+        "description": "Good for newcomers"
+    },
+    {
+        "id": 3440288216,
+        "node_id": "LA_kwDOGMv2ks7NDqHY",
+        "url": "https://api.github.com/repos/braughtg/FarmData2-For190VC-Activities/labels/help%20wanted",
+        "name": "help wanted",
+        "color": "008672",
+        "default": true,
+        "description": "Extra attention is needed"
+    },
+    {
+        "id": 3440288221,
+        "node_id": "LA_kwDOGMv2ks7NDqHd",
+        "url": "https://api.github.com/repos/braughtg/FarmData2-For190VC-Activities/labels/invalid",
+        "name": "invalid",
+        "color": "e4e669",
+        "default": true,
+        "description": "This doesn't seem right"
+    },
+    {
+        "id": 3444412954,
+        "node_id": "LA_kwDOGMv2ks7NTZIa",
+        "url": "https://api.github.com/repos/braughtg/FarmData2-For190VC-Activities/labels/Links",
+        "name": "Links",
+        "color": "c5def5",
+        "default": false,
+        "description": "Link to be added to documentation."
+    },
+    {
+        "id": 3440288223,
+        "node_id": "LA_kwDOGMv2ks7NDqHf",
+        "url": "https://api.github.com/repos/braughtg/FarmData2-For190VC-Activities/labels/question",
+        "name": "question",
+        "color": "d876e3",
+        "default": true,
+        "description": "Further information is requested"
+    },
+    {
+        "id": 3444413515,
+        "node_id": "LA_kwDOGMv2ks7NTZRL",
+        "url": "https://api.github.com/repos/braughtg/FarmData2-For190VC-Activities/labels/Typos",
+        "name": "Typos",
+        "color": "A21517",
+        "default": false,
+        "description": "Typo in documentation to be fixed."
+    },
+    {
+        "id": 3440288225,
+        "node_id": "LA_kwDOGMv2ks7NDqHh",
+        "url": "https://api.github.com/repos/braughtg/FarmData2-For190VC-Activities/labels/wontfix",
+        "name": "wontfix",
+        "color": "ffffff",
+        "default": true,
+        "description": "This will not be worked on"
+    }
+]

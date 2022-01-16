@@ -1,6 +1,6 @@
 #!/usr/bin/env python3.10
 '''
-create-instance.py
+create_instance.py
 '''
 
 
@@ -88,8 +88,7 @@ class InstanceCreator:
 
 class MyProgressPrinter(git.RemoteProgress):
     def update(self, op_code, cur_count, max_count=None, message=''):
-        print(op_code, cur_count, max_count, cur_count / (max_count or 100.0), message or "NO MESSAGE")
-# end
+        print("Pushing main", round((cur_count / (max_count or 100.0))*100, 1), message)
 
 
 def get_local_repo():
@@ -114,8 +113,8 @@ def create_empty_repository(gh, org_name, repo_name):
 
 
 class EmptyRepositoryCreator:
-    def __init__(self, github):
-        self.github = github
+    def __init__(self, github_):
+        self.github = github_
         self.repo = None
 
     def create(self, org_name, repo_name):
