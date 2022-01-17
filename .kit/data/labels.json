@@ -3,7 +3,7 @@
         "id": 3444415232,
         "node_id": "LA_kwDOGMv2ks7NTZsA",
         "url": "https://api.github.com/repos/braughtg/FarmData2-For190VC-Activities/labels/190-Round1",
-        "name": "190-Round1",
+        "name": "Round1",
         "color": "6B4089",
         "default": false,
         "description": "First issues for COMP 190 Activity."
@@ -12,7 +12,7 @@
         "id": 3444415937,
         "node_id": "LA_kwDOGMv2ks7NTZ3B",
         "url": "https://api.github.com/repos/braughtg/FarmData2-For190VC-Activities/labels/190-Round2",
-        "name": "190-Round2",
+        "name": "Round2",
         "color": "7AA01D",
         "default": false,
         "description": "Second issues for COMP 190 Activity."
