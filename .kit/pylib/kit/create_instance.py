@@ -1,4 +1,3 @@
-from kit import command_line
 from kit import github
 from kit import json
 from kit import git
