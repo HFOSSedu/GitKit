@@ -59,6 +59,7 @@ class InstanceCreator:
         self.create_empty_instance_repo(org_name, repo_name)
         self.create_instance_remote()
         self.push_main_to_instance_repo()
+        delete_all_issues(self.github, repo_name)
 
     def connect_to_github(self, token):
         self.token = token
@@ -88,7 +89,8 @@ class InstanceCreator:
 
 class MyProgressPrinter(git.RemoteProgress):
     def update(self, op_code, cur_count, max_count=None, message=''):
-        print("Pushing main", round((cur_count / (max_count or 100.0))*100, 1), message)
+        percent_done = round((cur_count / (max_count or 100.0))*100, 1) + '%'
+        print("Pushing main", percent_done, message)
 
 
 def get_local_repo():
@@ -130,6 +132,17 @@ class EmptyRepositoryCreator:
             if o.login.lower() == org_name:
                 return o
         raise Exception(f'You are not a member of {org_name}.')
+
+
+def delete_all_issues(gh, repo_name):
+    full_name = to_full_name(gh.get_user().login, repo_name)
+    repo = gh.get_repo(full_name)
+    for i in repo.get_issues():
+        i.delete()
+
+
+def to_full_name(user_name, repo_name):
+    return repo_name if '/' in repo_name else f'{user_name}/{repo_name}'
 
 
 if __name__ == '__main__':
