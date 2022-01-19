@@ -13,5 +13,5 @@ from kit import github
 token, repo_name = command_line.get_args(2)
 connection = github.connect(token)
 user = github.get_authenticated_user(connection)
-repo_desc = github.RepoDescriptor(token, user, repo_name)
+repo_desc = github.RepoDescriptor(connection, user, repo_name)
 create_instance(token, user, repo_desc)
