@@ -1,14 +1,14 @@
 # Kit - User Guide
 
-## `create-instance.py`
+## `create_instance.py`
 
-### Overview of `create-instance.py`
+### Overview of `create_instance.py`
 
-`create-instance.py` creates an independent instance of a kit environment. In particular, it creates a repository on GitHub in the organization or under your account, and with the name you specify. It loads this repository with the contents of this project's main branch, and some predefined issues and labels given in JSON files in this project's Instructor branch (see .kit/data).
+`create_instance.py` creates an independent instance of a kit environment. In particular, it creates a repository on GitHub in the organization or under your account, and with the name you specify. It loads this repository with the contents of this project's main branch, and some predefined issues and labels given in JSON files in this project's Instructor branch (see .kit/data).
 
-### Install dependencies for `create-instance.py`
+### Install dependencies for `create_instance.py`
 
-There are two ways to run `create-instance.py`: natively or using a development container. To run it natively, you need first install the following dependencies.
+There are two ways to run `create_instance.py`: natively or using a development container. To run it natively, you need first install the following dependencies.
 
 * [Git 2.34](https://git-scm.com/)
 * [Python 3.10](https://www.python.org/)
@@ -24,7 +24,7 @@ Alternatively, if you would rather use a development container, don't install th
 
 What's the difference? A development container is an isolated environment that contains the first set of dependencies pre-installed. That means there is little risk of the development container to interfere with the dependencies of any other software you have installed or will install on your computer. Also, it ensures that you have the exact versions of the dependencies that the developers wrote and tested against. The disadvantage is that it relies on Docker which requires a minimum of 4GB RAM to run, and really 8GB+ to run comfortably.
 
-### Use `create-instance.py`
+### Use `create_instance.py`
 
 1. [Generate an access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) with privileges over your repositories. We recommend specifying a timeout for the token, and naming it based on the instance you are creating. This token will be used to create your new repository and will be saved in the clear in remote named kit_instance in your local repository. Keep this token safe, and expire it when you no longer need it (you can always get another). Anyone who has it can use it to manipulate your repositories on GitHub.
 
@@ -57,10 +57,10 @@ What's the difference? A development container is an isolated environment that c
 
 7. Start a terminal in VS Code; one way to do this is to press CTRL+`  (the grave accent key; usually it's left of the 1-key).
 
-8. Run create-instance.py
+8. Run create_instance.py
 
     ```bash
-    .kit/bin/create-instance.py YOUR_TOKEN [ORG/]REPO
+    .kit/bin/create_instance.py YOUR_TOKEN [ORG/]REPO
     ```
 
     Where YOUR_TOKEN is the token you generated in GitHub in the first step, ORG is the name of the organization or your login name which will contain the new repository, and REPO is the name you would like for the new repository. ORG is optional (thus the square brackets; do not type the square brackets). If you do provide an ORG, you must separate it from the REPO with a `/`. For example `HFOSSedu/my_new_repository`. If you do not provide an ORG, the new repository will be created under your login.
