@@ -92,7 +92,7 @@
   },
   {
     "title": "Add Missing \"that\"",
-    "body": "Add \"that\" between \"tutorial\" and \"that\" in the bullet point \"Git Immersion: A tutorial walks through a series of ...\" in the \"Prerequisites\" section of the ONBOARDING.md file.",
+    "body": "Add \"that\" between \"tutorial\" and \"walks\" in the bullet point \"Git Immersion: A tutorial walks through a series of ...\" in the \"Prerequisites\" section of the ONBOARDING.md file.",
     "labels": [
       "documentation",
       "Typos",

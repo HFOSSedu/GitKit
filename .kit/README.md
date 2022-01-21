@@ -26,7 +26,11 @@ What's the difference? A development container is an isolated environment that c
 
 ### Use `create_instance.py`
 
-1. [Generate an access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) with privileges over your repositories. We recommend specifying a timeout for the token, and naming it based on the instance you are creating. This token will be used to create your new repository and will be saved in the clear in remote named kit_instance in your local repository. Keep this token safe, and expire it when you no longer need it (you can always get another). Anyone who has it can use it to manipulate your repositories on GitHub.
+1. [Generate an access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
+    - In **Note** name your token based on the instance you are creating. For example, if you are creating a Kit instance for cs101, name it cs101.
+    - We recommend specifying an **Expiration** for the token, and naming it based on the instance you are creating.
+    - Under **Select scopes**, select **repo** and leave the others unselected.
+    - **Anyone with this token can manipulate your repositories on GitHub.** Keep this token safe, and expire it when you no longer need it (you can always get another). This token will be saved in the URL for the `kit_instance` remote in your in your local git files (.git) but are not stored in the repository data itself. The token is saved in plain text.
 
 2. Clone GitKit and change to the directory it creates. In this example we are cloning it into cs101.
 
@@ -45,13 +49,15 @@ What's the difference? A development container is an isolated environment that c
 
 > **NOTE:** If you are not using the devcontainer, you can skip ahead to step 8.
 
-4. If not yet running, start Docker and wait for it to be ready.
+4. If not yet running (look for the Docker Whale in your system tray or use the command line to [Check whether Docker is running](https://docs.docker.com/config/daemon/#check-whether-docker-is-running)), start Docker and wait for it to be ready.
 
-5. Start VS Code (the dot at the end of the line in the following instruction is intentional and important; it represents the current directory).
+5. Open the root of the project in VS Code. If you have VS Code installed in your system's path (see VS Code install instructions for [Windows](https://code.visualstudio.com/docs/setup/windows), [macOS](https://code.visualstudio.com/docs/setup/mac), and [Linux](https://code.visualstudio.com/docs/setup/linux)), this can be done with the following command (the dot at the end of the line in the following instruction is intentional and important; it represents the current directory).
 
-    ```bash
-    code .
-    ```
+        ```bash
+        code .
+        ```
+
+> **TIP:** If VS Code asks you to install Python, you can ignore this because the development container will do this for you.
 
 6. When VS Code asks if you would like to "reopen in container", do so. If you miss it, click the `><` in the lower left corner and select the "reopen in container".
 
