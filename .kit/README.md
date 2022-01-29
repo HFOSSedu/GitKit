@@ -29,7 +29,7 @@ What's the difference? A development container is an isolated environment that c
 1. [Generate an access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
     - In **Note** name your token based on the instance you are creating. For example, if you are creating a Kit instance for cs101, name it cs101.
     - We recommend specifying an **Expiration** for the token, and naming it based on the instance you are creating.
-    - Under **Select scopes**, select **repo** and leave the others unselected.
+    - Under **Select scopes**, select **repo** and **workflow**, and leave the others unselected.
     - **Anyone with this token can manipulate your repositories on GitHub.** Keep this token safe, and expire it when you no longer need it (you can always get another). This token will be saved in the URL for the `kit_instance` remote in your in your local git files (.git) but are not stored in the repository data itself. The token is saved in plain text.
 
 2. Clone GitKit and change to the directory it creates. In this example we are cloning it into cs101.
@@ -72,6 +72,13 @@ What's the difference? A development container is an isolated environment that c
     Where YOUR_TOKEN is the token you generated in GitHub in the first step, ORG is the name of the organization or your login name which will contain the new repository, and REPO is the name you would like for the new repository. ORG is optional (thus the square brackets; do not type the square brackets). If you do provide an ORG, you must separate it from the REPO with a `/`. For example `HFOSSedu/my_new_repository`. If you do not provide an ORG, the new repository will be created under your login.
 
     This will take several minutes to complete. When done your new repository will have been created and will contain the issues, labels, and source code necessary to complete the activities in this kit.  Your local repository will have a new remote named kit_instance. The URL in this remote contains the token. Keep this token confidential. Anyone who has it can manipulate your repositories on GitHub.
+
+## Claiming issues in the instance
+
+Anyone can claim an issue by leaving the following comment:
+
+    I would like to work on this please!
+
 
 # Kit - Developer Guide
 
