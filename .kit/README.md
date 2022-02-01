@@ -10,6 +10,8 @@
 
 There are two ways to run `create_instance.py`: natively or using a development container. To run it natively, you need first install the following dependencies.
 
+> NOTE: Versions listed below are what were developed and tested against. You may be able to use an earlier or later version; but then your mileage may vary.
+
 * [Git 2.34](https://git-scm.com/)
 * [Python 3.10](https://www.python.org/)
 * [PyGitHub 1.55](https://pygithub.readthedocs.io/en/latest/introduction.html)
@@ -17,8 +19,10 @@ There are two ways to run `create_instance.py`: natively or using a development 
 
 Alternatively, if you would rather use a development container, don't install the above dependencies. Instead, install the following dependencies.
 
+> NOTE: Versions listed below are what were developed and tested against. You may be able to use an earlier or later version; but then your mileage may vary.
+
 * [Git 2.34](https://git-scm.com/)
-* [Docker](https://www.docker.com/get-started)
+* [Docker ](https://www.docker.com/get-started)
 * [VS Code](https://code.visualstudio.com/)
 * [Remote - Containers Extension for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
@@ -39,31 +43,25 @@ What's the difference? A development container is an isolated environment that c
     cd cs101
     ```
 
-> **NOTE:** You'll need a separate clone for each instance you plan to deploy. Your local clone will become your instructor control for the instance.
+    > **NOTE:** You'll need a separate clone for each instance you plan to deploy. Your local clone will become your instructor control for the instance.
 
-3.  Switch to the Instructor branch.
+    > **NOTE:** If you are not using the devcontainer, you can skip ahead to step 7.
+
+3. If not yet running (look for the Docker Whale in your system tray or use the command line to [Check whether Docker is running](https://docs.docker.com/config/daemon/#check-whether-docker-is-running)), start Docker and wait for it to be ready.
+
+4. Open the root of the project in VS Code. If you have VS Code installed in your system's path (see VS Code install instructions for [Windows](https://code.visualstudio.com/docs/setup/windows), [macOS](https://code.visualstudio.com/docs/setup/mac), and [Linux](https://code.visualstudio.com/docs/setup/linux)), this can be done with the following command (the dot at the end of the line in the following instruction is intentional and important; it represents the current directory).
 
     ```bash
-    git switch Instructor
+    code .
     ```
 
-> **NOTE:** If you are not using the devcontainer, you can skip ahead to step 8.
+    > **TIP:** If VS Code asks you to install Python, you can ignore this because the development container will do this for you.
 
-4. If not yet running (look for the Docker Whale in your system tray or use the command line to [Check whether Docker is running](https://docs.docker.com/config/daemon/#check-whether-docker-is-running)), start Docker and wait for it to be ready.
+5. When VS Code asks if you would like to "reopen in container", do so. If you miss it, click the `><` in the lower left corner and select the "reopen in container".
 
-5. Open the root of the project in VS Code. If you have VS Code installed in your system's path (see VS Code install instructions for [Windows](https://code.visualstudio.com/docs/setup/windows), [macOS](https://code.visualstudio.com/docs/setup/mac), and [Linux](https://code.visualstudio.com/docs/setup/linux)), this can be done with the following command (the dot at the end of the line in the following instruction is intentional and important; it represents the current directory).
+6. Start a terminal in VS Code; one way to do this is to press CTRL+`  (the grave accent key; usually it's left of the 1-key).
 
-        ```bash
-        code .
-        ```
-
-> **TIP:** If VS Code asks you to install Python, you can ignore this because the development container will do this for you.
-
-6. When VS Code asks if you would like to "reopen in container", do so. If you miss it, click the `><` in the lower left corner and select the "reopen in container".
-
-7. Start a terminal in VS Code; one way to do this is to press CTRL+`  (the grave accent key; usually it's left of the 1-key).
-
-8. Run create_instance.py
+7. Run create_instance.py
 
     ```bash
     .kit/bin/create_instance.py YOUR_TOKEN [ORG/]REPO
