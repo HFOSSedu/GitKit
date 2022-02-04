@@ -6,6 +6,8 @@ This file: .kitty/README.md
 
 * Bash
 * Python 3.6+
+* GitPython
+* PyGithub
 
 ## Install
 
