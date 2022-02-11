@@ -5,5 +5,6 @@ cd "${SCRIPT_DIR}"
 
 # Install git hooks
 cp .hooks/pre-commit ../.git/hooks/pre-commit
+cp .hooks/pre-commit ../.git/hooks/pre-merge-commit
 cp .hooks/pre-rebase ../.git/hooks/pre-rebase
 git config branch.main.mergeoptions "--no-ff"
