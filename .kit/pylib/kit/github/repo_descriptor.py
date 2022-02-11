@@ -22,3 +22,6 @@ class RepoDescriptor:
         github.delay_after_notification()
         print(f'Created empty repo {repo.url}')
         return repo
+
+    def __str__(self):
+        return f'{self.namespace_name}/{self.repo_name}'
