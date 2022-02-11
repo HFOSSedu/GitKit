@@ -10,6 +10,8 @@ then
   echo
   echo "    You should be only be merging in a GitHub pull request."
   echo "    The working tree is still in a MERGING state. Run the command 'git reset --merge'"
+  echo "    IGNORE MESSAGES AFTER THIS LINE"
   echo "*************************"
+  git reset --merge
   exit 1
 fi
