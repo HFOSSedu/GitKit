@@ -1,3 +1,5 @@
+import pathlib
+from time import sleep
 from kit import github
 from kit import json
 from kit import git
@@ -14,6 +16,17 @@ def create_instance(token, user, repo_desc, remote_name='kit_instance', labels_f
     active_branch = local_repo.active_branch
     origin = local_repo.remotes.origin
     local_repo.create_head('main', origin.refs.main).set_tracking_branch(origin.refs.main).checkout()
+
+    # Commit upstream name to main
+    sleep(2)
+    env_file_dir = pathlib.Path(local_repo.working_tree_dir) / '.kitty'
+    assert env_file_dir.exists(), f'{env_file_dir} does not exist'
+    assert env_file_dir.is_dir(), f'{env_file_dir} is not a directory'
+    env_file = env_file_dir / 'env'
+    with env_file.open('w') as f:
+        f.write(f'KIT_UPSTREAM_NAME="{str(repo_desc)}"')
+    local_repo.index.add([str(env_file)])
+    local_repo.index.commit('kit: add upstream repository name')
     active_branch.checkout()
 
     # Create repository on GitHub.
