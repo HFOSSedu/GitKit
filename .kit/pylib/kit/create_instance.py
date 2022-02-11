@@ -20,7 +20,8 @@ def create_instance(token, user, repo_desc, remote_name='kit_instance', labels_f
     # Commit upstream name to main
     sleep(2)
     env_file_dir = pathlib.Path(local_repo.working_tree_dir) / '.kitty'
-    assert env_file_dir.exists() and env_file_dir.is_dir()
+    assert env_file_dir.exists(), f'{env_file_dir} does not exist'
+    assert env_file_dir.is_dir(), f'{env_file_dir} is not a directory'
     env_file = env_file_dir / 'env'
     with env_file.open('w') as f:
         f.write(f'KIT_UPSTREAM_NAME="{str(repo_desc)}"')
