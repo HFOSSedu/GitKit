@@ -25,7 +25,7 @@ def create_instance(token, user, repo_desc, remote_name='kit_instance', labels_f
     env_file = env_file_dir / 'env'
     with env_file.open('w') as f:
         f.write(f'KIT_UPSTREAM_NAME="{str(repo_desc)}"')
-    local_repo.index.add([env_file])
+    local_repo.index.add([str(env_file)])
     local_repo.index.commit('kit: add upstream repository name')
     active_branch.checkout()
 
