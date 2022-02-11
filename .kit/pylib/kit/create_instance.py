@@ -18,7 +18,7 @@ def create_instance(token, user, repo_desc, remote_name='kit_instance', labels_f
 
     # Commit upstream name to main
     env_file = pathlib.Path(local_repo.working_tree_dir) / '.kitty' / 'env'
-    with open(env_file, 'w') as f:
+    with open(env_file, 'x') as f:
         f.write(f'KIT_UPSTREAM_NAME="{str(repo_desc)}"')
     local_repo.index.add([env_file])
     local_repo.index.commit('kit: add upstream repository name')
