@@ -6,7 +6,7 @@
 if [[ `git symbolic-ref HEAD` == "refs/heads/main" ]]
 then
   echo "**********************************************************************"
-  printf "\xF0\x9F\x98\xBA Hi, Kitty here...\n"
+  printf "\xF0\x9F\x98\xBA Meow, Kitty here...\n"
   echo "You should not be committing to the main branch."
   echo "You should be committing to a feature branch."
   echo "You can create a branch with the following command:"

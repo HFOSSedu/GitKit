@@ -4,7 +4,9 @@
 # Based on https://gist.github.com/ilyakatz/4625224#file-pre-commit-master-no-no
 
 # Disallow all rebasing
-echo "*************************"
+echo "**********************************************************************"
+printf "\xF0\x9F\x98\xBA Meow, Kitty here...\n"
 echo "You should not be rebasing in this kit."
-echo "*************************"
+echo "You should be using 'git merge' instead."
+echo "**********************************************************************"
 exit 1

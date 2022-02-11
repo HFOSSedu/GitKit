@@ -5,12 +5,17 @@
 
 if [[ `git symbolic-ref HEAD` == "refs/heads/main" ]]
 then
-  echo "*************************"
+  echo "**********************************************************************"
+  printf "\xF0\x9F\x98\xBA Meow, Kitty here...\n"
   echo "You should not be merging to the main branch."
+  echo "You should only be merging in a GitHub pull request."
+  echo "The working tree is still in a merging state."
   echo
-  echo "    You should be only be merging in a GitHub pull request."
-  echo "    The working tree is still in a MERGING state. Run the command 'git reset --merge'"
-  echo "    IGNORE MESSAGES AFTER THIS LINE"
-  echo "*************************"
+  echo "Before continuing, run the command:"
+  echo 
+  echo "    git reset --merge"
+  echo
+  echo "Ignore messages after this line"
+  echo "**********************************************************************"
   exit 1
 fi
