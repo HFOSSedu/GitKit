@@ -13,7 +13,7 @@ This must be done once after cloning.
 In git-bash (Windows), bash (Linux), zsh (Mac Terminal) run
 
 ```bash
-.kitty/init
+.kitty/init.bash
 ```
 
 ## Design

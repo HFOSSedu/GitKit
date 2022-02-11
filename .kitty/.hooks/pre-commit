@@ -5,11 +5,12 @@
 
 if [[ `git symbolic-ref HEAD` == "refs/heads/main" ]]
 then
-  echo "*************************"
+  echo "**********************************************************************"
+  printf "\xF0\x9F\x98\xBA Hi, Kitty here...\n"
   echo "You should not be committing to the main branch."
-  echo
-  echo "    You should be committing to a feature branch."
-  echo "    You can create a branch with 'git checkout -b branchname'"
-  echo "*************************"
+  echo "You should be committing to a feature branch."
+  echo "You can create a branch with the following command:"
+  echo "    git checkout -b <branchname>"
+  echo "**********************************************************************"
   exit 1
 fi
