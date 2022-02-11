@@ -17,8 +17,10 @@ def create_instance(token, user, repo_desc, remote_name='kit_instance', labels_f
     local_repo.create_head('main', origin.refs.main).set_tracking_branch(origin.refs.main).checkout()
 
     # Commit upstream name to main
-    env_file = pathlib.Path(local_repo.working_tree_dir) / '.kitty' / 'env'
-    with open(env_file, 'x') as f:
+    env_file_dir = pathlib.Path(local_repo.working_tree_dir) / '.kitty'
+    assert env_file_dir.exists() and env_file_dir.is_dir()
+    env_file = env_file_dir / 'env'
+    with env_file.open('w') as f:
         f.write(f'KIT_UPSTREAM_NAME="{str(repo_desc)}"')
     local_repo.index.add([env_file])
     local_repo.index.commit('kit: add upstream repository name')
