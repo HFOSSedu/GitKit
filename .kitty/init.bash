@@ -3,13 +3,13 @@
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 cd "${SCRIPT_DIR}"
 
-# Install git hooks
-# cp .hooks/pre-commit ../.git/hooks/pre-commit
-# cp .hooks/pre-merge-commit ../.git/hooks/pre-merge-commit
-# cp .hooks/pre-rebase ../.git/hooks/pre-rebase
-# git config branch.main.mergeoptions "--no-ff"
+## Install git hooks
+cp .hooks/pre-commit ../.git/hooks/pre-commit
+cp .hooks/pre-merge-commit ../.git/hooks/pre-merge-commit
+cp .hooks/pre-rebase ../.git/hooks/pre-rebase
+git config branch.main.mergeoptions "--no-ff"
 
-# Load environment variables including KIT_UPSTREAM_NAME
+## Check origin remote URL does not contain upstream's name.
 source ./env
 ORIGIN="$(git remote -v | grep origin)"
 if [[ "$ORIGIN" == *"$KIT_UPSTREAM_NAME"* ]] ; then
