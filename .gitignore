@@ -17,3 +17,6 @@ farmdata2_modules/**/cypress/videos/*
 **/__pycache__
 
 .DS_Store
+
+## .kit should only exist in Instructor branch.
+.kit/
