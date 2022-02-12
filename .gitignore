@@ -17,3 +17,6 @@ farmdata2_modules/**/cypress/videos/*
 **/__pycache__
 
 .DS_Store
+
+## .kitty should only appear in main
+.kitty/
