@@ -21,24 +21,9 @@ There is a sequence of 4 activites that cover the following topics:
 
 ### Using this Repository
 
-The following steps outline how to to get setup and then how to use this repostory with the above activities.
+**Note:** One fork will support up to 26 students. If you have more than 26 students you will need to have multiple repositories.
 
-#### Set Up
-
-1. Fork this repository to the location where you want students to find it.
-   * Note: One fork will support up to 26 students. If you have more than 26 students you will need to have multiple repositories.
-2. Enable issues in your fork.
-3. Optionally rename your fork to something appropraite to your course/assignments.
-4. Optionally delete the "Instructor" branch from your fork.
-5. Copy the issues from this repository into your fork:
-   1. Fork the [git-hub-issues-import](https://github.com/IQAndreas/github-issues-import) repository.
-   2. Edit the `config.ini` to include:
-      1. Your username
-      2. A GitHub PAT with access to your fork as the password.
-      3. The `braughtg/FarmData2-For190VC-Activities` as the source repository.
-      4. Your fork as the target repository.
-   c. Run `python3 gh-issues-import.py --open`
-      * Sometimes this will give an authentication error after some number of issues are copied.  If it does, rerun it using specific issue numbers so that all issues are copied. E.g. `python3 gh-issues-import.py --issues 21 22 23 24` to copy issues 21, 22, 23 and 24.
+To set up this repository to use in your class, see the [README in .kit](.kit/README.md)
 
 #### FOSS Community and Collaboration
 

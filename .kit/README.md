@@ -1,5 +1,7 @@
 # Kit - User Guide
 
+**Note:** One fork will support up to 26 students. If you have more than 26 students you will need to have multiple repositories.
+
 ## `create_instance.py`
 
 ### Overview of `create_instance.py`
