@@ -7,16 +7,16 @@ comparing-workflows/forking-workflow).
 
 There is a sequence of 4 activities that cover the following topics:
 
-1. Community and Collaboration: [[Slides](https://dickinson-comp190.github.io/website/materials/07-S-VCI-CommCollab.pptx) | [Activity](https://dickinson-comp190.github.io/website/materials/07-A-VCI-CommCollab.docx)]
+1. Community and Collaboration: [[Slides](https://github.com/braughtg/GitKitMaterials/raw/main/1-S-CommunityAndCollaboration.pptx) | [Activity](https://github.com/braughtg/GitKitMaterials/raw/main/1-A-CommunityAndCollaboration.docx)]
    * An introduction to FOSS communities, how they collaborate using version control (e.g. git) and repository hosting (e.g. GitHub).
    * Includes practice with the issue tracker, forking and cloning.
-2. Working Local & Upstreaming [[Slides](https://dickinson-comp190.github.io/website/materials/08-S-VCII-Upstreaming.pptx) | [Activity](https://dickinson-comp190.github.io/website/materials/08-A-VCII-Upstreaming.docx)]
+2. Working Local & Upstreaming [[Slides](https://github.com/braughtg/GitKitMaterials/raw/main/2-S-WorkingLocallyAndUpstreaming.pptx) | [Activity](https://github.com/braughtg/GitKitMaterials/raw/main/2-A-WorkiongLocallyAndUpstreaming.docx)]
    * Introduces feature branches, commits and pull requests as part of a basic branching workflow.
    * Includes practice with creating and switching branches, staging and committing changes, pushing to origin and submitting pull requests.
-3. Staying Synchronized [[Slides](https://dickinson-comp190.github.io/website/materials/09-S-VCIII-SynchWithUpstream.pptx) | [Activity](https://dickinson-comp190.github.io/website/materials/09-A-VCIII-SynchWithUpstream.docx)]
+3. Staying Synchronized [[Slides](https://github.com/braughtg/GitKitMaterials/raw/main/3-S-StayingSynchronized.pptx) | [Activity](https://github.com/braughtg/GitKitMaterials/raw/main/3-A-StayingSynchronized.docx)]
    * Looks at how asynchronous collaboration results in local repository being out of synch with the upstream and how to resolve this by pulling automatically merged changes.
    * Includes having code merged into upstream main, practice with setting the upstream remote, pulling changes from upstream main, pushing to origin, deleting feature branches.
-4. Merge Conflicts [[Slides](https://dickinson-comp190.github.io/website/materials/10-S-VCIV-MergeConflicts.pptx) | [Activity](https://dickinson-comp190.github.io/website/materials/10-A-VCIV-MergeConflicts.docx)]
+4. Merge Conflicts [[Slides](https://github.com/braughtg/GitKitMaterials/raw/main/4-S-MergeConflicts.pptx) | [Activity](https://github.com/braughtg/GitKitMaterials/raw/main/4-A-MergeConflicts.docx)]
    * Introduces conflicting changes, how they lead to merge conflicts, how they can be resolved.
    * Includes practice with merging main into a feature branch, merge conflict representation, using a merge tool and updating a pull request.
 
