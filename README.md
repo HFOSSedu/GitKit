@@ -21,6 +21,8 @@ There is a sequence of 4 activites that cover the following topics:
 
 ### Using this Repository
 
+**Note:** One fork will support up to 26 students. If you have more than 26 students you will need to have multiple repositories.
+
 To set up this repository to use in your class, see the [README in .kit](.kit/README.md)
 
 #### FOSS Community and Collaboration
