@@ -10,25 +10,10 @@
 
 ### Install dependencies for `create_instance.py`
 
-There are two ways to run `create_instance.py`: natively or using a development container. To run it natively, you need first install the following dependencies.
-
-> NOTE: Versions listed below are what were developed and tested against. You may be able to use an earlier or later version; but then your mileage may vary.
-
-* [Git 2.34](https://git-scm.com/)
-* [Python 3.10](https://www.python.org/)
-* [PyGitHub 1.55](https://pygithub.readthedocs.io/en/latest/introduction.html)
-* [GitPython 3.1](https://gitpython.readthedocs.io/en/stable/)
-
-Alternatively, if you would rather use a development container, don't install the above dependencies. Instead, install the following dependencies.
-
-> NOTE: Versions listed below are what were developed and tested against. You may be able to use an earlier or later version; but then your mileage may vary.
-
-* [Git 2.34](https://git-scm.com/)
-* [Docker ](https://www.docker.com/get-started)
+* [Git](https://git-scm.com/)
+* [Docker](https://www.docker.com/)
 * [VS Code](https://code.visualstudio.com/)
-* [Remote - Containers Extension for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
-
-What's the difference? A development container is an isolated environment that contains the first set of dependencies pre-installed. That means there is little risk of the development container to interfere with the dependencies of any other software you have installed or will install on your computer. Also, it ensures that you have the exact versions of the dependencies that the developers wrote and tested against. The disadvantage is that it relies on Docker which requires a minimum of 4GB RAM to run, and really 8GB+ to run comfortably.
+* [Remote - Containers extension for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
 ### Use `create_instance.py`
 
@@ -46,8 +31,6 @@ What's the difference? A development container is an isolated environment that c
     ```
 
     > **NOTE:** You'll need a separate clone for each instance you plan to deploy. Your local clone will become your instructor control for the instance.
-
-    > **NOTE:** If you are not using the devcontainer, you can skip ahead to step 7.
 
 3. If not yet running (look for the Docker Whale in your system tray or use the command line to [Check whether Docker is running](https://docs.docker.com/config/daemon/#check-whether-docker-is-running)), start Docker and wait for it to be ready.
 
