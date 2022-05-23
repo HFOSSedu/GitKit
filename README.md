@@ -1,7 +1,6 @@
 # Instructor Guide for FarmData2 GitKit
 
-The FarmData2 GitKit repository is a disconnected fork of [FarmData2](https://github.com/DickinsonCollege/FarmData2) created for class activities that introduce Free and Open Source Software (FOSS) collaboration models using git and GitHub with a [forking workflow](https://www.atlassian.com/git/tutorials/
-comparing-workflows/forking-workflow).  
+The FarmData2 GitKit repository is a disconnected fork of [FarmData2](https://github.com/DickinsonCollege/FarmData2) created for class activities that introduce Free and Open Source Software (FOSS) collaboration models using git and GitHub with a [forking workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow).  
 
 ## Activities
 
